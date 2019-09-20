@@ -1,5 +1,5 @@
 class Post
-  belongs_to Author
+  @author
   attr_accessor :title
   def initialize
     @title = ""
@@ -8,4 +8,9 @@ class Post
   def name=(title)
     @title = title
   end
+
+  def defAuthor(name)
+    @author = Author.new(name)
+  end
+
 end
