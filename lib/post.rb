@@ -10,7 +10,7 @@ class Post
   end
 
   def defAuthor(name)
-    @author = Author.new(name)
+    :author = Author.new(name)
   end
 
 end
